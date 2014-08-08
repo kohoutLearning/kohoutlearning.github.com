@@ -20,9 +20,9 @@ FriendView = Backbone.View.extend({
         var thisView = this;
         this.friendslist = new FriendList;
         _.bindAll(this, 'render');
-        alert("binding");
+        // alert("binding");
         this.friendslist.bind("add", function( model ){
-            alert("hey");
+            // alert("hey");
             thisView.render( model );
         })
     },
