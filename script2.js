@@ -34,7 +34,7 @@ ToDoView = Backbone.View.extend({
     },
     
     removeItem: function() {
-        $(this).remove();
+        $(this).model.remove();
     },
 
     render: function( model ) {
