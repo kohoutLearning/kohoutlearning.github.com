@@ -35,7 +35,7 @@ ToDoView = Backbone.View.extend({
     
     removeItem: function() {
         $(this).remove();
-    }
+    },
 
     render: function( model ) {
         $(".list").append("<div class='item'>"+ model.get("todo_item")+"</div>");
