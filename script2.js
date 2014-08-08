@@ -21,7 +21,7 @@ ToDoView = Backbone.View.extend({
         this.todoslist = new ToDoList;
         _.bindAll(this, 'render');
         // alert("binding");
-        this.friendslist.bind("add", function( model ){
+        this.todoslist.bind("add", function( model ){
             // alert("hey");
             thisView.render( model );
         })
@@ -29,7 +29,7 @@ ToDoView = Backbone.View.extend({
 
     addToDo: function() {
         var todo_item = $('#input').val();
-        this.friendslist.add( {todo_item: todo_item} );
+        this.todoslist.add( {todo_item: todo_item} );
     },
 
     render: function( model ) {
@@ -39,5 +39,5 @@ ToDoView = Backbone.View.extend({
 
 });
 
-var view = new FriendView({el: 'body'});
+var view = new ToDoView({el: 'body'});
 });
