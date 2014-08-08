@@ -33,7 +33,7 @@ ToDoView = Backbone.View.extend({
     },
 
     render: function( model ) {
-        $(".list").append("<li>"+ model.get("todo_item")+"</li>");
+        $(".list").append("<li>"+ model.get("name")+"</li>");
         console.log('rendered')
     },
 
