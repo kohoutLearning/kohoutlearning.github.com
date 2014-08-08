@@ -20,9 +20,9 @@ ToDoView = Backbone.View.extend({
         var thisView = this;
         this.todoslist = new ToDoList;
         _.bindAll(this, 'render');
-        // alert("binding");
+         alert("binding");
         this.todoslist.bind("add", function( model ){
-            // alert("hey");
+             alert("hey");
             thisView.render( model );
         })
     },
