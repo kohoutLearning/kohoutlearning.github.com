@@ -28,7 +28,7 @@ ToDoView = Backbone.View.extend({
     },
 
     addToDo: function() {
-        var todo_item_val = $('#input').val();
+        var todo_item_val = $('#checkListItem').val();
         this.todoslist.add( {todo_item: todo_item_val} );
     },
 
