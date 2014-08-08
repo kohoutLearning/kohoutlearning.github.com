@@ -14,7 +14,7 @@ ToDoView = Backbone.View.extend({
 
     events: {
         'click #button':  'addToDo',
-        'click ".item"':  'removeItem',
+        'click .item':  'removeItem',
     },
 
     initialize: function() {
