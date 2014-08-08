@@ -14,6 +14,7 @@ ToDoView = Backbone.View.extend({
 
     events: {
         'click #button':  'addToDo',
+        'click ".item"':  'removeItem',
     },
 
     initialize: function() {
@@ -31,6 +32,10 @@ ToDoView = Backbone.View.extend({
         var todo_item_val = $('#input').val();
         this.todoslist.add( {todo_item: todo_item_val} );
     },
+    
+    removeItem: function() {
+        $(this).remove();
+    }
 
     render: function( model ) {
         $(".list").append("<div class='item'>"+ model.get("todo_item")+"</div>");
