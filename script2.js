@@ -13,7 +13,7 @@ ToDoView = Backbone.View.extend({
     tagName: 'li',
 
     events: {
-        'click #buttont':  'addToDo',
+        'click #button':  'addToDo',
     },
 
     initialize: function() {
