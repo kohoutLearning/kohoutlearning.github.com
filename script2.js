@@ -29,7 +29,7 @@ ToDoView = Backbone.View.extend({
 
     addToDo: function() {
         var todo_item = $('#input').val();
-        this.todoslist.add( {todo_item: todo_item} );
+        this.todoslist.add( {name: todo_item} );
     },
 
     render: function( model ) {
