@@ -41,7 +41,7 @@ var ListItemView = Backbone.View.extend({
 });
 
 // View for the existing 'Add Button' to attach an event
-// and handle the event
+// and handle the click event
 var AddButtonView = Backbone.View.extend({
     el:'#add-item-button',
     
@@ -65,8 +65,8 @@ var AddButtonView = Backbone.View.extend({
     }
 });
 
-// View for the existing 'ToDo Item' to attach an event
-// and handle the event
+// View for the existing 'ToDo Item' textbox to attach an event
+// and handle the Keyboard Enter event
 var ToDoItemInputView = Backbone.View.extend({
     el:'#toDo-Item',
     
