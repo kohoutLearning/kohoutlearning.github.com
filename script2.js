@@ -13,7 +13,6 @@ var listItems = new ListItemCollection();
 
 // Generic view to create a list item
 var ListItemView = Backbone.View.extend({
-    //el:'div',
     
    // This view will expect parameters to be passed in
    initialize: function(options) {
@@ -66,7 +65,7 @@ var AddButtonView = Backbone.View.extend({
     }
 });
 
-// View for the existing 'Add Button' to attach an event
+// View for the existing 'ToDo Item' to attach an event
 // and handle the event
 var ToDoItemInputView = Backbone.View.extend({
     el:'#toDo-Item',
