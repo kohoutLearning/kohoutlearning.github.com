@@ -91,7 +91,10 @@ var ToDoItemInputView = Backbone.View.extend({
       //alert("AddButtonView.addItem");
         // Get the new item from the text input box using
         // jQuery function .val()
-        var newItem = $('#toDo-Item').val();
+        //var newItem = $('#toDo-Item').val();
+		
+		//This adds a hover tool tip of "click to remove" to the added item
+        var newItem = '<div title="click to remove">'+$('#toDo-Item').val()+'</div>';
         //alert("newItem = " + newItem);
         // Create a new list item model with the new item name
         var item = new ListItemModel({itemName: newItem});
