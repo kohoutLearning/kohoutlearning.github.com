@@ -137,7 +137,6 @@ var ToDoListContainerView = Backbone.View.extend({
       //alert("ToDoListContainerView.addItemToList value = "+ this);
 
         // Append it to the end of the existing list
-        //$('#lists-of-items').append(itemToAdd.render().el);
         $('#lists-of-items').append(itemToAdd.render().el);
         
         return this;        
